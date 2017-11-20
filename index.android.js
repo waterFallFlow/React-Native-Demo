@@ -9,7 +9,7 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View   
 } from 'react-native';
 
 export default class ergate_ticker_mobile extends Component {
@@ -17,7 +17,7 @@ export default class ergate_ticker_mobile extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          Welcome to React Native
         </Text>
         <Text style={styles.instructions}>
           To get started, edit index.android.js
