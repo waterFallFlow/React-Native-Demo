@@ -22,9 +22,6 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		182CDA221FBAD33C00E37E2E /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 182CDA1C1FBAD30C00E37E2E /* Lottie.framework */; };
-		18533FD11FA5C84900EF1C49 /* RNTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18533FD01FA5C84900EF1C49 /* RNTestView.m */; };
-		18533FF61FA5E50900EF1C49 /* RNTestViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18533FF51FA5E50900EF1C49 /* RNTestViewManager.m */; };
-		18533FF91FA6B7CA00EF1C49 /* RNTMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18533FF81FA6B7CA00EF1C49 /* RNTMapManager.m */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		72231EF3FE34433DB5EEB55F /* libReactNativeNavigation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0714BA1E274FF4A84E4678 /* libReactNativeNavigation.a */; };
 		802C49CAF433499F9883216B /* libLottieReactNative.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43C56ABC7C244677BB011335 /* libLottieReactNative.a */; };
@@ -305,12 +302,6 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ergate_ticker_mobile/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ergate_ticker_mobile/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
-		18533FCF1FA5C84900EF1C49 /* RNTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNTestView.h; sourceTree = "<group>"; };
-		18533FD01FA5C84900EF1C49 /* RNTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTestView.m; sourceTree = "<group>"; };
-		18533FF41FA5E50900EF1C49 /* RNTestViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNTestViewManager.h; sourceTree = "<group>"; };
-		18533FF51FA5E50900EF1C49 /* RNTestViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTestViewManager.m; sourceTree = "<group>"; };
-		18533FF71FA6B7CA00EF1C49 /* RNTMapManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNTMapManager.h; sourceTree = "<group>"; };
-		18533FF81FA6B7CA00EF1C49 /* RNTMapManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTMapManager.m; sourceTree = "<group>"; };
 		1EA67673DE154937B1A5EFEC /* LottieReactNative.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = LottieReactNative.xcodeproj; path = "../node_modules/lottie-react-native/lib/ios/LottieReactNative.xcodeproj"; sourceTree = "<group>"; };
 		43C56ABC7C244677BB011335 /* libLottieReactNative.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libLottieReactNative.a; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
@@ -420,8 +411,6 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
-				18533FF71FA6B7CA00EF1C49 /* RNTMapManager.h */,
-				18533FF81FA6B7CA00EF1C49 /* RNTMapManager.m */,
 			);
 			name = ergate_ticker_mobile;
 			sourceTree = "<group>";
@@ -488,18 +477,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		18533F901FA5C79800EF1C49 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				18533FCF1FA5C84900EF1C49 /* RNTestView.h */,
-				18533FD01FA5C84900EF1C49 /* RNTestView.m */,
-				18533FF41FA5E50900EF1C49 /* RNTestViewManager.h */,
-				18533FF51FA5E50900EF1C49 /* RNTestViewManager.m */,
-			);
-			name = Components;
-			path = ergate_ticker_mobile/Components;
-			sourceTree = "<group>";
-		};
 		5E91572E1DD0AC6500FF2AA8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -553,7 +530,6 @@
 			isa = PBXGroup;
 			children = (
 				13B07FAE1A68108700A75B9A /* ergate_ticker_mobile */,
-				18533F901FA5C79800EF1C49 /* Components */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				182CD9831FBAC23100E37E2E /* Recovered References */,
@@ -980,10 +956,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18533FF61FA5E50900EF1C49 /* RNTestViewManager.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
-				18533FF91FA6B7CA00EF1C49 /* RNTMapManager.m in Sources */,
-				18533FD11FA5C84900EF1C49 /* RNTestView.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
