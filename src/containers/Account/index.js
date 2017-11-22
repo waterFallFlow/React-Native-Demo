@@ -7,7 +7,7 @@ import { Navigation } from 'react-native-navigation';
 const SCREEN_WIDTH  = Dimensions.get('window').width;
 const SCREEN_HEIGHT = Dimensions.get('window').height;
 
-export default class SecondPage extends Component {
+export default class Account extends Component {
 
   componentDidMount() {
     console.log('second page mount');

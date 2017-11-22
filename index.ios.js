@@ -3,4 +3,4 @@
  * https://github.com/facebook/react-native
  * @flow
  */
-import App from './src/app';
+import App from './src/root';
