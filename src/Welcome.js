@@ -1,7 +1,6 @@
 
 import React, { Component, PropTypes } from 'react';
 import { View, TouchableHighlight, StyleSheet, Dimensions, Animated, Text, Easing, AsyncStorage } from 'react-native';
-import Animation from 'lottie-react-native';
 import { startTabBasedApp } from './luanch';
 
 
@@ -18,8 +17,7 @@ export default class Welcome extends Component {
     super(props);
     console.log('======', props);
     this.state = {
-      visible: new Animated.Value(0),
-      progress: new Animated.Value(0),
+      visible: new Animated.Value(0)
     }
   }
 
@@ -38,20 +36,12 @@ export default class Welcome extends Component {
   }
 
   componentDidMount() {
-
     console.log('=======', this.props.tag);
-
-    Animated.timing(this.state.progress, {
+    Animated.timing(this.state.visible, {
       toValue: 1,
-      duration: 5000
-    }).start(() => {
-        Animated.timing(this.state.visible, {
-          toValue: 1,
-          easing: Easing.bounce,
-          duration: 500
-        }).start();
-      }
-    );
+      easing: Easing.bounce,
+      duration: 500
+    }).start();
   }
 
   clearStorage() {
@@ -71,22 +61,15 @@ export default class Welcome extends Component {
     };
     return (
       <View style={[styles.center, { width: SCREEN_WIDTH, height: SCREEN_HEIGHT }]}>
-        <View>
-          <Animation
-            style={{ width: SCREEN_WIDTH, height: SCREEN_HEIGHT }}
-            source={require('./lotties/guide6.json')}
-            progress={this.state.progress}
-          />
-          <Animated.View style={[styles.guideBtn, transform]}>
-            <TouchableHighlight 
-              underlayColor={'#rgba(0,209,193,0.8)'} 
-              onPress={() => { this.clearStorage() }} 
-              style={[styles.center, { flex: 1 }]}
-            >
-              <Text style={styles.text}> 立即体验 </Text>
-            </TouchableHighlight>
-          </Animated.View>
-        </View>
+        <Animated.View style={[styles.guideBtn, transform]}>
+          <TouchableHighlight 
+            underlayColor={'#rgba(0,209,193,0.8)'} 
+            onPress={() => { this.clearStorage() }} 
+            style={[styles.center, { flex: 1 }]}
+          >
+            <Text style={styles.text}> 立即体验 </Text>
+          </TouchableHighlight>
+        </Animated.View>
       </View>
     );
   }
