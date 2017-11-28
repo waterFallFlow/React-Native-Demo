@@ -1,13 +1,13 @@
 
 import React, { Component, PropTypes } from 'react';
 import { View, TouchableHighlight, StyleSheet, Dimensions, Animated, Text, Easing, AsyncStorage } from 'react-native';
-import { startTabBasedApp } from './luanch';
+import { startTabBasedApp } from '../../root/luanch';
 
 
 const SCREEN_WIDTH  = Dimensions.get('window').width;
 const SCREEN_HEIGHT = Dimensions.get('window').height;
 
-export default class Welcome extends Component {
+export default class Guide extends Component {
 
   static navigatorStyle = {
     navBarHidden: true

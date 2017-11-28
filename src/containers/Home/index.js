@@ -13,7 +13,7 @@ import { Navigation } from 'react-native-navigation';
 const SCREEN_WIDTH  = Dimensions.get('window').width;
 const SCREEN_HEIGHT = Dimensions.get('window').height;
 
-export default class FirstPage extends Component {
+export default class Home extends Component {
 
   static propTypes = {
 
