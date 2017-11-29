@@ -21,7 +21,7 @@ export default class Account extends Component {
       to: this.status ? 'shown' : 'hidden', 
       animated: true 
     });
-    // this.props.navigator.toggleNavBar({
+    // this.props.navigator.toggleNavBar({·
     //   to: 'hidden', 
     //   animated: true 
     // });

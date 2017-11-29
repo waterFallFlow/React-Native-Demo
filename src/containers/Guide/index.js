@@ -3,14 +3,14 @@ import React, { Component, PropTypes } from 'react';
 import { View, TouchableHighlight, StyleSheet, Dimensions, Animated, Text, Easing, AsyncStorage } from 'react-native';
 import { startTabBasedApp } from '../../root/luanch';
 
-
 const SCREEN_WIDTH  = Dimensions.get('window').width;
 const SCREEN_HEIGHT = Dimensions.get('window').height;
 
 export default class Guide extends Component {
 
   static navigatorStyle = {
-    navBarHidden: true
+    navBarHidden: true,
+    disabledBackGesture: true
   }
 
   constructor(props) {
@@ -24,15 +24,6 @@ export default class Guide extends Component {
   componentWillUnmount() {
     const { callback } = this.props;
     callback && callback('welcome');
-
-    this.props.navigator.toggleTabs({
-      to: 'shown', 
-      animated: true 
-    });
-    this.props.navigator.toggleNavBar({
-      to: 'shown', 
-      animated: true 
-    });
   }
 
   componentDidMount() {
@@ -45,6 +36,9 @@ export default class Guide extends Component {
   }
 
   clearStorage() {
+    if (this.props.tag) {
+      this.props.navigator.pop({ animated: true });
+    } 
     AsyncStorage.setItem('Welcome', JSON.stringify({ isFirst: true }), (err, result) => {
       startTabBasedApp();
     });
