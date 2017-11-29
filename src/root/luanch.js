@@ -20,7 +20,7 @@ export const startTabBasedApp = () => {
         icon: Images.firstTab, // local image asset for the tab icon unselected state (optional on iOS)
         selectedIcon: Images.firstTabSelected, // local image asset for the tab icon selected state (optional, iOS only. On Android, Use `tabBarSelectedButtonColor` instead)
         title: 'Screen One', // title of the screen as appears in the nav bar (optional)
-        navigatorStyle: {}, // override the navigator style for the tab screen, see "Styling the navigator" below (optional),
+        navigatorStyle: { navBarHidden: true }, // override the navigator style for the tab screen, see "Styling the navigator" below (optional),
         navigatorButtons: {} // override the nav buttons for the tab screen, see "Adding buttons to the navigator" below (optional)
       },
       {
@@ -28,6 +28,7 @@ export const startTabBasedApp = () => {
         screen: 'demo.Account',
         icon: Images.secondTab,
         selectedIcon: Images.secondTabSelected,
+        navigatorStyle: { navBarHidden: true },
         title: 'Screen Two'
       }
     ],
@@ -36,6 +37,7 @@ export const startTabBasedApp = () => {
       tabBarSelectedButtonColor: '#ff9900', // optional, change the color of the selected tab icon and text (only selected). On Android, add this to appStyle
       tabBarBackgroundColor: '#33333333', // optional, change the background color of the tab bar
       initialTabIndex: 0, // optional, the default selected bottom tab. Default: 0. On Android, add this to appStyle
+      tabBarHideShadow: false
     },
     appStyle: {
       orientation: 'portrait', // Sets a specific orientation to the entire app. Default: 'auto'. Supported values: 'auto', 'landscape', 'portrait'
